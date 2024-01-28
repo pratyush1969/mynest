@@ -6,6 +6,13 @@
 body {
   background-color: #ffd639;
 }
+.main-card-pg{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .headline h1 {
   font-family: "Outfit", sans-serif;
   font-size: 60px;

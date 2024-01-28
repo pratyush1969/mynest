@@ -72,15 +72,20 @@ const Home = (props) => {
       <div className="headline">
         <h1 id="caption">Discover Your Perfect PG Stay</h1>
         <SearchEngine func1={homeLoc} func2={homePin}/>
-      </div>
+      </div >
       {searchCard===undefined && <button className="show-btn" onClick={handleUndefine}>Show Pg</button>}
+      <div className=" main-card-pg">
       {searchCard===null || searchCard===undefined?<No_data_found type="PG"/>:Object.values(searchCard).map((e)=>{
-             return <Showpg obj={e} event1={fullviewevent}/>
-      })}
-     <ABC/>
-     <ABC/>
-     <ABC/>
-     <ABC/><ABC/><ABC/>
+             return (
+             
+
+                <Showpg obj={e} event1={fullviewevent}/>
+             
+             )
+
+             
+      })} </div>
+    
      
      
      

@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
 }
+/*.gp{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
 .pg-card-show {
   display: inline-block;
   background-color: #fff0b8;
