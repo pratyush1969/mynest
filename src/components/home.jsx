@@ -4,6 +4,7 @@ import Showpg from "./showpg.jsx";
 import SearchEngine from "./searchEngine.jsx";
 import { listCard } from "./accomodation.js";
 import No_data_found from "./no_data_found.jsx";
+import ABC from "./abc";
 
 const Home = (props) => {
   const [searchCard,setsearchCard] = useState([]);
@@ -11,6 +12,7 @@ const Home = (props) => {
     mode : "",
     val : ""
   });
+ 
 
   let handleUndefine = async()=>{
     if(seCondi.mode==="location"){
@@ -75,6 +77,18 @@ const Home = (props) => {
       {searchCard===null || searchCard===undefined?<No_data_found type="PG"/>:Object.values(searchCard).map((e)=>{
              return <Showpg obj={e} event1={fullviewevent}/>
       })}
+     <ABC/>
+     <ABC/>
+     <ABC/>
+     <ABC/><ABC/><ABC/>
+     
+     
+     
+
+     
+
+     
+
     </>
   );
 };

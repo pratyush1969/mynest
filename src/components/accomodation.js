@@ -5,12 +5,13 @@ import { getAuth} from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB_RQueBaP_UiR5mVRPVEA1elGAmc1J6a8",
-  authDomain: "guestifyapp-34776.firebaseapp.com",
-  projectId: "guestifyapp-34776",
-  storageBucket: "guestifyapp-34776.appspot.com",
-  messagingSenderId: "511962558406",
-  appId: "1:511962558406:web:1a9761c968b7e3ddd00cc7"
+  apiKey: "AIzaSyBzJMpajdLAZ_mTxV_0EPLtaDvN5pJ1kgA",
+  authDomain: "guestv2-42454.firebaseapp.com",
+  databaseURL: "https://guestv2-42454-default-rtdb.firebaseio.com",
+  projectId: "guestv2-42454",
+  storageBucket: "guestv2-42454.appspot.com",
+  messagingSenderId: "106040176675",
+  appId: "1:106040176675:web:bc8461efdbdc9a3044c196"
 };
 
 const app = initializeApp(firebaseConfig);
