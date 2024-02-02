@@ -28,6 +28,8 @@
   padding: 20px;
   border-radius: 25px;
   align-items: center;
+  border:1px solid black;
+  box-shadow: 5px 5px 4px black;
 }
 .sign-pg-owner {
   color: #5b645d;
@@ -74,6 +76,8 @@
   text-align: center;
   background-color: #fff0b8;
   border-radius: 25px;
+  border:1px solid black;
+  box-shadow: 5px 5px 4px black;
 }
 .old-here h2 {
   color: #5b645d;
@@ -99,7 +103,7 @@
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  background-color: #b0b6ba;
+  background-color: dodgerblue;
 }
 .old-here button a {
   text-decoration: none;

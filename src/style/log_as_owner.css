@@ -26,6 +26,8 @@
   background-color: #fff0b8;
   padding: 20px;
   border-radius: 25px;
+  border:1px solid black;
+  box-shadow: 5px 5px 4px black;
 }
 .login-pg-owner {
   color: #5b645d;
@@ -63,7 +65,7 @@ input [type="password"] {
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
-  background-color: #b0b6ba;
+  background-color:dodgerblue;
 }
 .new-here {
   height: 175px;
@@ -71,6 +73,8 @@ input [type="password"] {
   text-align: center;
   background-color: #fff0b8;
   border-radius: 25px;
+  border:1px solid black;
+  box-shadow: 5px 5px 4px black;
 }
 .new-here h2 {
   color: #5b645d;
@@ -96,7 +100,7 @@ input [type="password"] {
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  background-color: #b0b6ba;
+  background-color:dodgerblue;
 }
 .new-here button a {
   text-decoration: none;

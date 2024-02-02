@@ -69,7 +69,7 @@ const Home = (props) => {
   }
   return (
     <>
-      <div className="headline">
+      <div className="headline" data-aos="fade-right">
         <h1 id="caption">Discover Your Perfect PG Stay</h1>
         <SearchEngine func1={homeLoc} func2={homePin}/>
       </div >

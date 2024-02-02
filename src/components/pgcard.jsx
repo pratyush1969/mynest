@@ -37,7 +37,7 @@ const Pgcard = (props) => {
   },[imgUrl])
 
   return (
-    <div className="pg-details-all">
+    <div className="pg-details-all" data-aos="zoom-in">
       <div className="pg-img"><img src={imgUrl} height="150px"/></div>
       <div className="pg-details">
         <h4>Ownername : {props.obj.OwnerName}</h4>

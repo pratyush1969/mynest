@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div className="about-page-info">
-        <div className="our-mission">
+        <div className="our-mission"data-aos="fade-up-right">
           <h2>Our Mission</h2>
           <p>
             At PGConnect, we are committed to simplifying the process of finding
@@ -15,7 +15,7 @@ const About = () => {
             secure platform for hassle-free living.
           </p>
         </div>
-        <div className="our-mission">
+        <div className="our-mission" data-aos="fade-up-left">
           <h2>Solving a Common Dilemma</h2>
           <p>
             Finding a comfortable, safe, and affordable PG accommodation can be
@@ -24,7 +24,7 @@ const About = () => {
             offering an innovative solution.
           </p>
         </div>
-        <div className="our-mission">
+        <div className="our-mission"data-aos="fade-up-right">
           <h2>Key Features</h2>
           <ul>
             <li>
@@ -41,7 +41,7 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="our-mission">
+        <div className="our-mission"data-aos="fade-up-left">
           <h2>Who Can Benefit?</h2>
           <ul>
             <li>
@@ -58,7 +58,7 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="our-mission">
+        <div className="our-mission" data-aos="fade-up-right">
           <h2>Our Technology Stack</h2>
           <ul>
             <li>
