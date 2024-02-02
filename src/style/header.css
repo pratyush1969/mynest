@@ -9,7 +9,7 @@ body {
 img {
   height: 50px;
   width: 210px;
-  margin-top: 15px;
+  
   margin-left: 20px;
 }
 .main {
@@ -36,7 +36,7 @@ nav a {
   width: 100%;
   top: 0;
   z-index: 10000;
-  background-color: #ffd639;
+  background-color:whitesmoke;
 }
 
 @media only screen and (max-width: 750px) {
@@ -48,7 +48,7 @@ nav a {
   }
 }
 nav a:hover{
-  background-color: beige;
+  background-color: #FF6868;
   border-radius: 10px;
   transition-duration: 0.3s;
 }

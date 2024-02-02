@@ -23,7 +23,7 @@
   height: 375px;
   width: 300px;
   text-align: center;
-  background-color: #fff0b8;
+  background-color: whitesmoke;
   padding: 20px;
   border-radius: 25px;
   border:1px solid black;
@@ -71,7 +71,7 @@ input [type="password"] {
   height: 175px;
   width: 280px;
   text-align: center;
-  background-color: #fff0b8;
+  background-color: whitesmoke;
   border-radius: 25px;
   border:1px solid black;
   box-shadow: 5px 5px 4px black;

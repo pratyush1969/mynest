@@ -11,7 +11,7 @@ import Profile from "./components/profile.jsx";
 import Pgfullview from "./components/pgfullview.jsx";
 import React, { useState, Component } from "react";
 import { Link } from "react-router-dom";
-
+import ErrorPage from "./components/error.jsx";
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +30,7 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       // Display a user-friendly message or a fallback UI
-      return <div>Something went wrong. Please try again later.</div>;
+      return <div><ErrorPage/></div>;
     }
 
     return this.props.children;
@@ -142,6 +142,7 @@ const App = () => {
               path="/fulldetails"
               element={<Pgfullview pgObj={pgData} colAddress={address} />}
             />
+            
           </Routes>
         </Router>
       </ErrorBoundary>

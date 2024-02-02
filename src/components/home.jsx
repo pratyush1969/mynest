@@ -71,8 +71,8 @@ const Home = (props) => {
   };
   return (
     <>
-      <div className="headline">
-        <h1 id="caption">Discover Your Perfect PG Stay</h1>
+      <div className="headline"data-aos="fade-right">
+        <h1 id="caption">Your Home Away from Home: Comfort, Convenience, and Community in Every Room</h1>
         <SearchEngine func1={homeLoc} func2={homePin} />
       </div>
       {searchCard === undefined && (

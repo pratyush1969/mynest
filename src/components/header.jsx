@@ -9,7 +9,7 @@ function Header(props) {
     <>
       <div className="sticky-navbar">
         <a href="/home">
-          <img className="guestify-logo" src="./images/im3.jpg" alt="" />
+          <img className="guestify-logo" src="./images/logofinal.png" alt="" />
         </a>
         {window.innerWidth < "734" ? (
           <Sidebar
