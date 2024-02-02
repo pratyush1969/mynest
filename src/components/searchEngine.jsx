@@ -23,10 +23,16 @@ export default function SearchEngine(props) {
     } else {
       if (searchType === "local") {
         // setsearchCondition(colList[e.target.innerText].pincode);
-        props.func2(item.pincode);
+        props.func2({
+          pincode: item.pincode,
+          address: item.address,
+        });
       } else {
         // setsearchCondition(colList[e.target.innerText].location);
-        props.func1(item.location);
+        props.func1({
+          location: item.location,
+          address: item.address,
+        });
       }
       // console.log("object")
       // console.log(e.target.innerText);
@@ -45,10 +51,12 @@ export default function SearchEngine(props) {
             <svg
               className="w-8 h-8 text-gray-500 dark:text-gray-400 "
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256">
+              viewBox="0 0 256 256"
+            >
               <path
                 d="M200,224H150.5A253.6,253.6,0,0,0,174,200.2c27.5-31.5,42-64.8,42-96.2a88,88,0,0,0-176,0c0,31.4,14.5,64.7,42,96.2A253.6,253.6,0,0,0,105.5,224H56a8,8,0,0,0,0,16H200a8,8,0,0,0,0-16ZM128,72a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
-                fill="#939aa6"></path>
+                fill="#939aa6"
+              ></path>
             </svg>
           </div>
           <select
@@ -58,14 +66,16 @@ export default function SearchEngine(props) {
             onChange={(e) => {
               setsearchType(e.target.value);
               alert("Search Type changes");
-            }}>
+            }}
+          >
             <option value="local"> local Search </option>
             <option value="Long"> Long Search </option>
           </select>
         </div>
         <div
           id="dropdownSearch"
-          className="w-3/4 sm:w-2/3 md:w-1/2 z-10 bg-white rounded-lg shadow dark:bg-gray-700">
+          className="w-3/4 sm:w-2/3 md:w-1/2 z-10 bg-white rounded-lg shadow dark:bg-gray-700"
+        >
           <div className="p-3 w-full search-bar-color">
             <label htmlFor="input-group-search" className="sr-only">
               Search
@@ -77,7 +87,8 @@ export default function SearchEngine(props) {
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 20 20">
+                  viewBox="0 0 20 20"
+                >
                   <path
                     stroke="currentColor"
                     stroke-linecap="round"
@@ -102,13 +113,15 @@ export default function SearchEngine(props) {
               <ul
                 id="Kolkata_Colleges"
                 className=" h-48 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200"
-                aria-labelledby="dropdownSearchButton">
+                aria-labelledby="dropdownSearchButton"
+              >
                 {filteredData.map((item) => (
                   <li
                     key={item.id}
                     onClick={() => {
                       Handle_selectedItem(item);
-                    }}>
+                    }}
+                  >
                     <div className="flex items-center pl-2 rounded mb-4 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer">
                       <img
                         className="w-10 h-10 mr-2 rounded-md inline-block"
@@ -125,7 +138,8 @@ export default function SearchEngine(props) {
               </ul>
               <p
                 href="#"
-                className="flex items-center p-3 text-sm font-medium text-red-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-red-500 hover:underline"></p>
+                className="flex items-center p-3 text-sm font-medium text-red-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-red-500 hover:underline"
+              ></p>
             </div>
           ) : (
             ""

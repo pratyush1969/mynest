@@ -4,7 +4,7 @@ import { storage } from "./accomodation.js";
 import { ref, getDownloadURL } from "firebase/storage";
 import Pgreview from "./pgreview.jsx";
 import { writeFeedback, listFeedback } from "./accomodation.js";
-// import GetMap from "./map.jsx";
+import LocationMap from "./locationmap.jsx";
 
 const Pgfullview = (props) => {
   const [imgUrl, setimgUrl] = useState("");
@@ -14,6 +14,16 @@ const Pgfullview = (props) => {
     feedback: "",
   });
   const [feedCardData, setfeedCardData] = useState([]);
+
+  let myobject = {
+    add1: props.colAddress,
+    add2:
+      props.pgObj.OwnerFullAddress +
+      ", " +
+      props.pgObj.City +
+      ", " +
+      props.pgObj.OwnerState,
+  };
 
   let name;
   let value;
@@ -37,7 +47,7 @@ const Pgfullview = (props) => {
           props.pgObj.AdhaarNumber,
           feedData.name,
           feedData.email,
-          feedData.feedback
+          feedData.feedback,
         );
         alert("Feedback Added Successfully");
         gData();
@@ -73,7 +83,7 @@ const Pgfullview = (props) => {
     let getUrlImage = async () => {
       const storageRef = ref(
         storage,
-        `${props.pgObj.OwnerUserId}&${props.pgObj.AdhaarNumber}/${props.pgObj.ImageUrl}`
+        `${props.pgObj.OwnerUserId}&${props.pgObj.AdhaarNumber}/${props.pgObj.ImageUrl}`,
       );
       let url = await getDownloadURL(storageRef);
       setimgUrl(url);
@@ -122,7 +132,7 @@ const Pgfullview = (props) => {
         </div>
         {/* <GetMap location={props.pgObj.OwnerFullAddress+" kolkata, 700010"}/> */}
         {/* <GetMap location={props.pgObj.OwnerFullAddress.toLowerCase()} name="X-frame-Options"/> */}
-        
+
         <div className="pg-info">
           <p class="room-info">Owner Name : {props.pgObj.OwnerName}</p>
           <p class="room-info">Email Id : {props.pgObj.OwnerEmail}</p>
@@ -143,6 +153,9 @@ const Pgfullview = (props) => {
           <p class="room-info">Refrigetor : {props.pgObj.Refrigeretor}</p>
           <p class="room-info">WiFi Available : {props.pgObj.WifiAvailable}</p>
         </div>
+
+        <LocationMap location={myobject} />
+
         <div className="review-form">
           <h2>Leave your Feedback</h2>
           <div className="review-form-input">
@@ -169,7 +182,8 @@ const Pgfullview = (props) => {
             onChange={handleFeedChange}
             id=""
             cols="70"
-            rows="10"></textarea>
+            rows="10"
+          ></textarea>
           <div className="post-show-btn">
             <button type="submit" onClick={submitFeedback}>
               POST
