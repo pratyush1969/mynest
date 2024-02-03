@@ -72,7 +72,7 @@ const Home = (props) => {
   return (
     <>
       <div className="headline" data-aos="fade-right">
-        <h1 id="caption">Your Home Away from Home: Comfort, Convenience, and Community in Every Room</h1>
+        <h1 id="caption">Comfortable, Connected, Convenient Living!</h1>
         <SearchEngine func1={homeLoc} func2={homePin} />
       </div>
       {searchCard === undefined && (
