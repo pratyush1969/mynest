@@ -75,12 +75,12 @@ const Home = (props) => {
         <h1 id="caption">Comfortable, Connected, Convenient Living!</h1>
         <SearchEngine func1={homeLoc} func2={homePin} />
       </div>
-      <div className="show-pg-cards">
       {searchCard === undefined && (
         <button className="show-btn" onClick={handleUndefine}>
           Show Pg
         </button>
       )}
+          <div className="show-pg-cards">
       {searchCard === null || searchCard === undefined ? (
         <No_data_found type="PG" />
       ) : (

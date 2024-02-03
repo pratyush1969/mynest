@@ -1,13 +1,9 @@
+import React from 'react'
 
-import React from 'react';
-
-const ErrorPage = () => {
+const error = () => {
   return (
-    <div>
-      <h1>Error Page</h1>
-      <p>Oops! Something went wrong.</p>
-    </div>
-  );
-};
+    <div>error</div>
+  )
+}
 
-export default ErrorPage;
+export default error

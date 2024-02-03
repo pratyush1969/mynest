@@ -6,7 +6,7 @@
   width: 800px;
   /* width: clamp(150px, 90%, 550px); */
   height: auto;
-  background-color: #fff0b8;
+  background-color: whitesmoke;
   margin-top: 5px;
   border-radius: 25px;
 }
@@ -66,7 +66,7 @@
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  background-color: #00BFFF;
+  background-color: #13df50;
 }
 .delete {
   height: 35px;
@@ -79,6 +79,6 @@
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  background-color:#FF0000;
+  background-color:#5e42c2;
   color: white;
 }

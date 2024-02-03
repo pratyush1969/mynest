@@ -19,7 +19,7 @@
   width: clamp(100px, 80%, 350px);
   /* width: 350px; */
   height: 110px;
-  background-color: #fff0b8;
+  background-color: whitesmoke;
   margin-top: 5px;
   border-radius: 25px;
 }

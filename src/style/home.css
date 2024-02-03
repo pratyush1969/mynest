@@ -6,13 +6,14 @@
 body {
   background-color: #FF6868
 }
-.show-pg-card{
+.show-pg-cards{
   width:100%;
   height:auto;
   display:flex;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 .main-card-pg{
   width:100%;

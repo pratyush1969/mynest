@@ -175,7 +175,7 @@ const Form = (props) => {
                         <option value="">Select Your State Here</option>
                         <option value="West Bengal">West Bengal</option>
                         <option value="Bihar">Bihar</option>
-                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Odisha">Odisha</option>
                     </select>
 
                 </div>
@@ -194,7 +194,9 @@ const Form = (props) => {
                         <option value="Asansol">Asansol</option>
                         <option value="Siliguri">Siliguri</option>
                         <option value="Bardhaman">Bardhaman</option>
-                        <option value="Malda">Malda</option>                       
+                        <option value="Malda">Malda</option>    
+                        <option value="Coochbehar">Coochbehar</option>                       
+                   
                     </select>
 
                 </div>

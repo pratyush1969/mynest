@@ -1,0 +1,21 @@
+/*:root{
+    --var1:rgb(247, 233, 233);
+    --btn-light-text:;
+    --btn-dark-text:;
+    --btn-light-bg:;
+    --btn-dark-bg:;
+    --nav-light-text:;
+    --nav-dark-text:;
+    --nav-light-bg:;
+    --nav-dark-bg:;
+    --main-search-light-bg:;
+    --main-search-light-text:;
+    --main-search-dark-text:;
+    --main-search-dark-bg:;
+
+
+
+}
+body{
+    background-color: var(--var1) !important;
+}*/
