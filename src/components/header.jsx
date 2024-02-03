@@ -22,7 +22,7 @@ function Header(props) {
               <Link to="/home">Home</Link>
               <Link to="/about">About</Link>
               {!props.isLogin ? (
-                <Link to="/pgowner">PG Owner</Link>
+                <Link to="/pgowner">Owner</Link>
               ) : (
                 <Link to="/profile">Profile</Link>
               )}

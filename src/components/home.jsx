@@ -75,6 +75,7 @@ const Home = (props) => {
         <h1 id="caption">Comfortable, Connected, Convenient Living!</h1>
         <SearchEngine func1={homeLoc} func2={homePin} />
       </div>
+      <div className="show-pg-cards">
       {searchCard === undefined && (
         <button className="show-btn" onClick={handleUndefine}>
           Show Pg
@@ -85,13 +86,16 @@ const Home = (props) => {
       ) : (
         
         Object.values(searchCard).map((e) => {
-          return <Showpg obj={e} event1={fullviewevent} />;
+          return   <Showpg obj={e} event1={fullviewevent} />;
+  
+            
             
 
           
         })
       
       )}
+      </div>
     </>
   );
 };
