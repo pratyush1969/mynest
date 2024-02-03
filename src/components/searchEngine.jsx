@@ -46,8 +46,8 @@ export default function SearchEngine(props) {
   return (
     <>
       <div className="relative top-0 left-auto w-3/4 sm:w-2/3 md:w-2/3  m-auto bg-center flex serach-bar-location ">
-        <div className=" search-type relative rounded-md top-1 mr-2 w-48 h-14 px-2 py-1 rounde/d-md bg-gray-700 max-w-max flex items-center">
-          <div className="inline-block mx-1">
+        <div className=" search-type relative rounded-md top-1 mr-2 w-48 h-14 px-2 py-1 rounde/d-md bg-white max-w-max flex items-center">
+          <div className="inline-block mx-1 bg-white">
             <svg
               className="w-8 h-8 text-gray-500 dark:text-gray-400 "
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function SearchEngine(props) {
             </svg>
           </div>
           <select
-            className=" mx-2 bg-slate-300 rounded px-1.5 py-1 "
+            className=" mx-2 bg-slate-300 rounded px-1.5 py-1 bg-white "
             name=""
             id="s-type"
             onChange={(e) => {
@@ -76,7 +76,7 @@ export default function SearchEngine(props) {
           id="dropdownSearch"
           className="w-3/4 sm:w-2/3 md:w-1/2 z-10 bg-white rounded-lg shadow dark:bg-gray-700"
         >
-          <div className="p-3 w-full search-bar-color">
+          <div className="p-3 w-full bg-white">
             <label htmlFor="input-group-search" className="sr-only">
               Search
             </label>
