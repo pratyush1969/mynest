@@ -73,7 +73,7 @@ const Signup_as_owner = () => {
               />
             </div>
           </form>
-          <button type="submit" onClick={signUpUser}>Sign UP</button>
+          <button type="submit" onClick={signUpUser} style={{backgroundColor:"dodgerblue"}}>Sign Up</button>
         </div>
         <div className="old-here">
           <h2>Have you register with us?</h2>

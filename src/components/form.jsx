@@ -283,7 +283,7 @@ const Form = (props) => {
                     </div>
                 </div>
                 <div className="col">
-                    <label className="form-label">Availability of Refrigeretor ? </label>
+                    <label className="form-label">Availability o f Refrigeretor ? </label>
                     <div className="form-check">
                         
                         <input className="form-check-input" type="radio" name="Refrigeretor" value="Yes" id="Refrigeretor" onChange={dataChange}/>
@@ -347,8 +347,8 @@ information is true and accurate.</label>
             </div>
             <br/>
         </form>
-      <div className="d-flex justify-content-center"><button type="submit" className="btn btn-primary mx-5 col-1" onClick={write} >Submit</button>
-      <button type="reset" className="btn btn-info mx-5 col-1" onClick={reset}>Reset</button></div>
+      <div className="d-flex justify-content-center"><button type="submit" className="btn btn-dark mx-5 col-1" onClick={write} style={{outline:"none !important;"}}>Submit</button>
+      <button type="reset" className="btn btn-light mx-5 col-1" onClick={reset}>Reset</button></div>
     </div>
     </>
     
